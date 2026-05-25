@@ -1,0 +1,289 @@
+:root {
+  --lh-ink: #243041;
+  --lh-muted: #667085;
+  --lh-blue: #1677c7;
+  --lh-blue-dark: #0e5f9d;
+  --lh-line: #d9e3ee;
+  --lh-soft: #f4f8fb;
+  --lh-white: #ffffff;
+  --lh-shadow: 0 18px 45px rgba(35, 48, 65, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--lh-ink);
+  background: linear-gradient(180deg, #f8fbfd 0%, #ffffff 42%, #f5f9fc 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--lh-blue);
+  transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+a:hover {
+  color: var(--lh-blue-dark);
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.block-127,
+.block-128,
+.block-129 {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.site-name-290 .sn-text,
+.site-name .sn-text {
+  color: var(--lh-ink);
+  letter-spacing: 0;
+}
+
+.menu-279 ul,
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.menu-279 li a,
+.menu li a {
+  border-radius: 999px;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.menu-279 li.active a,
+.menu-279 li a:hover,
+.menu li.active a,
+.menu li a:hover {
+  background: var(--lh-blue);
+  color: #fff !important;
+  box-shadow: 0 8px 20px rgba(22, 119, 199, 0.22);
+}
+
+.phones-block a,
+.address-block .text_body,
+.schedule-block .text_body {
+  font-weight: 600;
+}
+
+.editable_block-301,
+.blocklist-306,
+.blocklist-311,
+.horizontal_block-197,
+.reviews-313,
+.localcontacts2,
+.lpc-content-wrapper {
+  max-width: 1180px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.editable_block-301 .body {
+  border-radius: 0 0 28px 28px;
+  overflow: hidden;
+}
+
+.editable_block-301 .title,
+.editable_block-301 .text {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
+}
+
+.editable_block-301 a[data-booking-open],
+.footer .all,
+.localcontacts2 a[href^="tel"],
+a[href="dogovor_dp.pdf"],
+a[href="/dogovor_dp.pdf"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 999px;
+  padding: 12px 22px;
+  color: #fff !important;
+  background: linear-gradient(135deg, var(--lh-blue), var(--lh-blue-dark));
+  text-decoration: none;
+  box-shadow: 0 12px 26px rgba(22, 119, 199, 0.24);
+}
+
+.editable_block-301 a[data-booking-open]:hover,
+.footer .all:hover,
+.localcontacts2 a[href^="tel"]:hover,
+a[href="dogovor_dp.pdf"]:hover,
+a[href="/dogovor_dp.pdf"]:hover {
+  transform: translateY(-2px);
+}
+
+.blocklist-306,
+.blocklist-311,
+.horizontal_block-197,
+.reviews-313,
+.localcontacts2 {
+  padding: 34px 24px;
+}
+
+.blocklist-306 .header_text,
+.blocklist-311 .header_text,
+.reviews-313 .header_text,
+.horizontal_block-197 .title {
+  color: var(--lh-ink);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.blocklist-306 .list,
+.blocklist-311 .list {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.blocklist-306 .item-outer,
+.blocklist-311 .item-outer {
+  width: auto !important;
+}
+
+.blocklist-306 .item,
+.blocklist-311 .item,
+.reviews-313 .item {
+  height: 100%;
+  border: 1px solid var(--lh-line);
+  border-radius: 22px;
+  background: var(--lh-white);
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(35, 48, 65, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blocklist-306 .item:hover,
+.blocklist-311 .item:hover,
+.reviews-313 .item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--lh-shadow);
+}
+
+.blocklist-306 .image img,
+.blocklist-311 .image img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.blocklist-306 .title,
+.blocklist-311 .title {
+  display: block;
+  padding: 16px 18px 20px;
+  color: var(--lh-ink);
+  font-weight: 700;
+}
+
+.horizontal_block-197 .body {
+  border-radius: 24px;
+  border: 1px solid var(--lh-line);
+  background: var(--lh-white);
+  box-shadow: 0 12px 30px rgba(35, 48, 65, 0.08);
+  padding: 28px;
+}
+
+.horizontal_block-197 .text {
+  color: var(--lh-muted);
+  line-height: 1.75;
+}
+
+.reviews-313 .list {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.reviews-313 .item-outer {
+  width: auto !important;
+}
+
+.reviews-313 .item {
+  padding: 22px;
+}
+
+.reviews-313 .text {
+  color: var(--lh-ink);
+  line-height: 1.65;
+}
+
+.reviews-313 .image img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+.site-copyright {
+  color: var(--lh-muted);
+}
+
+.localcontacts2 {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
+  gap: 24px;
+}
+
+.localcontacts__adress,
+.localmap {
+  border-radius: 24px;
+  border: 1px solid var(--lh-line);
+  background: var(--lh-white);
+  overflow: hidden;
+  box-shadow: 0 10px 26px rgba(35, 48, 65, 0.08);
+}
+
+.localcontacts__adress {
+  padding: 24px;
+}
+
+.localmap #myMap {
+  min-height: 420px;
+}
+
+@media (max-width: 900px) {
+  .blocklist-306 .list,
+  .blocklist-311 .list,
+  .reviews-313 .list,
+  .localcontacts2 {
+    grid-template-columns: 1fr;
+  }
+
+  .blocklist-306,
+  .blocklist-311,
+  .horizontal_block-197,
+  .reviews-313,
+  .localcontacts2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu-279 ul,
+  .menu ul {
+    display: block;
+  }
+
+  .blocklist-306 .image img,
+  .blocklist-311 .image img {
+    height: 190px;
+  }
+
+  .editable_block-301 .body,
+  .horizontal_block-197 .body {
+    border-radius: 18px;
+  }
+}
