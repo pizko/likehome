@@ -1,0 +1,70 @@
+:root {
+  --likehome-blue: #146ca8;
+  --likehome-blue-dark: #0f557f;
+  --likehome-ink: #243244;
+  --likehome-shadow: 0 10px 24px rgba(26, 47, 70, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--likehome-ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  transition: color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.mega-copyright,
+.widget-type-mega_copyright {
+  display: none !important;
+}
+
+.editable_block-301 .body {
+  box-shadow: var(--likehome-shadow);
+}
+
+.editable_block-301 a[data-booking-open] {
+  background-color: var(--likehome-blue) !important;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(20, 108, 168, 0.26);
+}
+
+.editable_block-301 a[data-booking-open]:hover {
+  background-color: var(--likehome-blue-dark) !important;
+}
+
+.blocklist-306 .item,
+.blocklist-311 .item,
+.reviews-313 .item,
+.horizontal_block-197 .body,
+.localcontacts__adress,
+.localmap {
+  border-radius: 10px;
+  box-shadow: var(--likehome-shadow);
+}
+
+.blocklist-306 .image img,
+.blocklist-311 .image img {
+  border-radius: 8px;
+}
+
+.reviews-313 .image img {
+  border-radius: 50%;
+}
+
+.footer .all,
+.localcontacts2 a[href^="tel"],
+a[href="dogovor_dp.pdf"],
+a[href="/dogovor_dp.pdf"] {
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(20, 108, 168, 0.18);
+}
+
+.site-copyright {
+  opacity: 0.78;
+}
