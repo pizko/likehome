@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="dark-site.css">
+  <link rel="stylesheet" href="booking.css">
 </head>
 <body>
   <header class="site-header">
@@ -33,7 +34,10 @@
       <img src="like-home-little.png" alt="Like Home">
       <div>
         <h2>ДОГОВОР ПУБЛИЧНОЙ ОФЕРТЫ НА ПРЕДОСТАВЛЕНИЕ МЕСТ ДЛЯ ВРЕМЕННОГО ПРОЖИВАНИЯ (АРЕНДА КОЙКО-МЕСТ)</h2>
-        <a class="button button--primary" href="dogovor_dp.pdf">Скачать договор Оферты</a>
+        <div class="hero__actions">
+          <a class="button button--primary" href="dogovor_dp.pdf">Скачать договор Оферты</a>
+          <a class="button button--ghost" href="#" data-booking-open>Оставить заявку</a>
+        </div>
       </div>
     </section>
   </main>
@@ -42,5 +46,6 @@
     <div>Copyright © 2025</div>
     <div>г. Долгопрудный, Лихачёвский пр-д, 5, стр. 11</div>
   </footer>
+  <script src="booking.js"></script>
 </body>
 </html>
