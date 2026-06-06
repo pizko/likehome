@@ -254,17 +254,32 @@ h3 {
 .benefits,
 .rooms,
 .reviews,
-.contacts-grid {
+.contacts-grid,
+.info-grid,
+.faq-list,
+.price-grid,
+.steps-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
+}
+
+.info-grid--two,
+.price-grid--two,
+.steps-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .benefit,
 .room,
 .review,
 .contact-card,
-.offer-card {
+.offer-card,
+.info-card,
+.price-card,
+.step-card,
+.faq-item,
+.cta-panel {
   border: 1px solid rgba(114, 92, 74, 0.08);
   border-radius: 30px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 250, 243, 0.96));
@@ -319,6 +334,94 @@ h3 {
   display: inline-block;
   margin-top: 8px;
   color: var(--text);
+}
+
+.info-card,
+.price-card,
+.step-card,
+.faq-item {
+  padding: 28px;
+}
+
+.info-card ul,
+.price-card ul,
+.step-card ul,
+.faq-item ul,
+.about__text ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.info-card li,
+.price-card li,
+.step-card li,
+.faq-item li,
+.about__text li {
+  margin-bottom: 10px;
+}
+
+.price-card__value {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--accent-deep);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.price-card__hint,
+.muted-note {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.route-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.78fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.route-hero .map-shell {
+  min-height: 100%;
+}
+
+.faq-item h3,
+.info-card h3,
+.price-card h3,
+.step-card h3 {
+  margin-bottom: 12px;
+}
+
+.faq-item p,
+.info-card p,
+.price-card p,
+.step-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.cta-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 34px;
+}
+
+.cta-panel__actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-weight: 700;
 }
 
 .reviews--page {
@@ -381,7 +484,9 @@ h3 {
 @media (max-width: 900px) {
   .hero,
   .about,
-  .offer-card {
+  .offer-card,
+  .route-hero,
+  .cta-panel {
     grid-template-columns: 1fr;
   }
 
@@ -397,7 +502,14 @@ h3 {
   .rooms,
   .reviews,
   .reviews--page,
-  .contacts-grid {
+  .contacts-grid,
+  .info-grid,
+  .faq-list,
+  .price-grid,
+  .steps-grid,
+  .info-grid--two,
+  .price-grid--two,
+  .steps-grid--two {
     grid-template-columns: 1fr;
   }
 
@@ -431,7 +543,12 @@ h3 {
   .benefit,
   .review,
   .contact-card,
-  .about {
+  .about,
+  .info-card,
+  .price-card,
+  .step-card,
+  .faq-item,
+  .cta-panel {
     border-radius: 24px;
   }
 }
